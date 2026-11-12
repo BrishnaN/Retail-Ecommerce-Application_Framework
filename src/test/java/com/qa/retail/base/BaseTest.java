@@ -39,7 +39,7 @@ public class BaseTest {
 	
 	@Parameters({"browser"})
 	@BeforeTest
-	public void setup(String browserName) { 
+	public void setup(@Optional("chrome") String browserName) { 
 		
 		// ChainTest Custom System Information
 		ChainPluginService.getInstance().addSystemInfo("Builds", "1.0");
